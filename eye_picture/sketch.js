@@ -1,6 +1,6 @@
-//eye by eer 8/1/19
-//demonstrates using shapes to draw a static picture
-//GH:eeriley99.github.io/code_sketchbook/eye_picture/
+//eye_picture by eer 8/1/19
+//demonstrates using shapes 
+//to draw a static picture
 
 function setup() {
   createCanvas(250, 250);
@@ -13,7 +13,7 @@ function draw() {
   fill(0);
   ellipse(width / 2, height / 2, 75, 75);
   noFill();
-  ellipse(width / 2, height / 2, 125, 125);
+  ellipse(width / 2, height / 2, 150, 150);
   rectMode(CENTER);
 
   //frame
