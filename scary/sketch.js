@@ -5,7 +5,7 @@
 let r, g, b;
 
 function setup() {
-  frameRate(60);
+  frameRate(10);
   createCanvas(250, 250);
   r = 0;
   g = 0;
@@ -18,6 +18,7 @@ function draw() {
   fill(0);
   ellipse(width / 2, height / 2, 75, 75);
   noFill();
+  strokeWeight(1);
   ellipse(width / 2, height / 2, 150, 150);
   rectMode(CENTER);
 }
@@ -35,13 +36,12 @@ function scary() {
   line(212.5, 212.5, 250, 250);
   strokeWeight(4);
   rect(width / 2, height / 2, 175, 175);
-  
+
   r = r + 1
+  
   while (r >= 254) {
     frameRate(180);
-      r = random(100, 254);
-    print (r);
-
-  
+    r = random(0, 100);
+    b = random(0, 100);
   }
 }
