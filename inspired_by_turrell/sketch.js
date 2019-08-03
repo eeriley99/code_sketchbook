@@ -5,7 +5,7 @@
 let r, g, b;
 
 function setup() {
-  frameRate(30);
+  frameRate(1);
   createCanvas(250, 250);
   r = 0;
   g = 0;
