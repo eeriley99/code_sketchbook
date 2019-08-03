@@ -5,7 +5,7 @@
 let r, g, b;
 
 function setup() {
-  frameRate(120);
+  frameRate(30);
   createCanvas(250, 250);
   r = 0;
   g = 0;
@@ -44,7 +44,6 @@ function scary() {
   r = r + 1
 
   while (r >= 254) {
-    frameRate(30);
     r = random(0, 100);
     b = random(0, 100);
   }
