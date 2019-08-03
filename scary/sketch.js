@@ -18,7 +18,7 @@ function draw() {
   fill(0);
   ellipse(width / 2, height / 2, 75, 75);
   noFill();
-  ellipse(width / 2, height / 2, 125, 125);
+  ellipse(width / 2, height / 2, 150, 150);
   rectMode(CENTER);
 }
 
