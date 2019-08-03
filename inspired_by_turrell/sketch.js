@@ -11,7 +11,7 @@ function setup() {
   g = 0;
   b = 0;
 
-  //saveFrames ("scary", "jpg", 240, 3);
+  //saveFrames ("inspired by turrell", "jpg", 240, 3);
 }
 
 function draw() {
@@ -44,7 +44,7 @@ function scary() {
   r = r + 1
 
   while (r >= 254) {
-    frameRate(180);
+    frameRate(30);
     r = random(0, 100);
     b = random(0, 100);
   }
