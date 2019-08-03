@@ -1,4 +1,4 @@
-//scary by eer 8/3/19
+//Inspired by Turrell by eer 8/3/19
 //demonstrates graduated color
 
 
