@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  stroke(0, 0, 0, 70); //black
+ //stroke(0, 0, 0, 70); //black
   keyTyped(); //type key for brush color
   // 'v' violet
   // 'i' indigo
