@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(250, 250);
-  clearBackground(); //resets canvas
+  //clearBackground(); //resets canvas
   cursor('https://eeriley99.github.io/icons/spray_can.gif');
 }
 
