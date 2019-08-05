@@ -34,7 +34,7 @@ function spray() {
 
 function clearBackground() {
   fill(255); //rect color
-  rect(2, 2, width - 4, height - 4);
+  rect(4, 4, width - 4, height - 4);
   fill(0); //text color
 
 }
