@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(1366, 768); 
+  createCanvas(1000, 800); 
   clearBackground(); //resets canvas
   cursor('https://eeriley99.github.io/icons/spray_can.gif');
 }
@@ -28,11 +28,10 @@ function draw() {
 function spray() {
   if (mouseIsPressed) {
     for (let i = 0; i < 200; i++) {
-      let leftWall = 245.88;
-      let rightWall = 1120.12;
-      let topWall = 245.88;
-      
-      let bottomWall = 629.76;
+      let leftWall = 125;
+      let rightWall = 875;
+      let topWall = 125;
+      let bottomWall = 675;
 
       let xc = constrain(mouseX, leftWall, rightWall);
       let yc = constrain(mouseY, topWall, bottomWall);
@@ -89,10 +88,10 @@ function frame() {
   noFill();
   strokeWeight(6);
   rect(0, 0, width, height);
-  rect(191.24, 191.24, 972.592, 972.592);
+  rect(125, 125, 750, 550);
   strokeWeight(1);
-  line(0, 0, 191.24, 191.24);
-  line(1168.3, 191.24, width, 0);
-  line(0, height, 191.24, 576.76);
-  line(1174.76, 576.76, width, height);
+  line(0, 0, 125, 125);
+  line(875, 125, width, 0);
+  line(0, height, 125, 675);
+  line(875, 125, width, height);
 }
