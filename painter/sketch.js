@@ -1,13 +1,10 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  //clearBackground(); //resets canvas
-  background (0);
+  clearBackground(); //resets canvas
   cursor('https://eeriley99.github.io/icons/spray_can.gif');
 }
 
 function draw() {
- 
-
   stroke(0, 0, 0, 70); //black
   keyTyped(); //type key for brush color
   // 'v' violet
@@ -30,9 +27,9 @@ function spray() {
   if (mouseIsPressed) {
     for (let i = 0; i < 200; i++) {
       let leftWall = 45;
-      let rightWall = 205;
+      let rightWall = (windowWidth - 45);
       let topWall = 45;
-      let bottomWall = 205;
+      let bottomWall = (windowHeight - 45;
 
       let xc = constrain(mouseX, leftWall, rightWall);
       let yc = constrain(mouseY, topWall, bottomWall);
@@ -48,7 +45,7 @@ function spray() {
 
 function clearBackground() {
   fill(255); //rect color
-  rect(0, 0, width, height);
+  rect(0, 0, windowWidth, windowHeight);
   stroke(0); //text color
 
 }
@@ -88,11 +85,11 @@ function keyTyped() {
 function frame() {
   noFill();
   strokeWeight(6);
-  rect(0, 0, width, height);
-  rect(35, 35, 178, 178);
+  rect(0, 0, windowWidth, windowHeight);
+  rect(35, 35, windowWidth - 72, windowHeight - 72);
   strokeWeight(1);
-  line(0, 0, 35, 35);
-  line(214, 35, 250, 0);
-  line(0, 250, 35, 214);
-  line(214, 214, 250, 250);
+  line(0, 0, 45, 45);//NWline
+  line(windowWidth, 0, windowWidth - 45, 45);//NEline
+  line(windowWidth, windowHeight, windowWidth - 45, windowHeight - 45);//SEline
+  line(0, windowHeight, 45, windowHeight - 45);//SWline
 }
