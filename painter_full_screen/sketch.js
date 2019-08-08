@@ -85,10 +85,10 @@ function frame() {
   noFill();
   strokeWeight(6);
   rect(0, 0, windowWidth, windowHeight);
-  rect(35, 35, windowWidth - 72, windowHeight - 72);
+  rect(35, 35, windowWidth - 70, windowHeight - 70);
   strokeWeight(1);
   line(0, 0, 35, 35);//NWline
   line(windowWidth, 0, windowWidth - 35, 35);//NEline
-  line(windowWidth, windowHeight, windowWidth - 45, windowHeight - 35);//SEline
+  line(windowWidth, windowHeight, windowWidth - 35, windowHeight - 35);//SEline
   line(0, windowHeight, 35, windowHeight - 35);//SWline
 }
